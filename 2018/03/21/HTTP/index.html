@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/tags/博客-小白-git/index.html">
+<meta name="description" content="1.AJAXurl：请求地址type：请求方法，默认为 getdataType：服务端响应数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP">
+<meta property="og:url" content="http://yoursite.com/2018/03/21/HTTP/index.html">
 <meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1.AJAXurl：请求地址type：请求方法，默认为 getdataType：服务端响应数据类型">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-21T05:37:13.148Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
+<meta name="twitter:title" content="HTTP">
+<meta name="twitter:description" content="1.AJAXurl：请求地址type：请求方法，默认为 getdataType：服务端响应数据类型">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/博客-小白-git/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/21/HTTP/">
 
 
 
 
 
-  <title>标签: 博客 小白 git | 我的博客</title>
+  <title>HTTP | 我的博客</title>
   
 
 
@@ -139,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,52 +269,265 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>博客 小白 git<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/21/HTTP/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhou">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/my.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/07/01/使用hexo和git建立博客/" itemprop="url">
-              
-                <span itemprop="name">使用hexo和git建立博客</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">HTTP</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-07-01T00:00:00+08:00" content="2017-07-01">
-          07-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-21T00:00:00+08:00">
+                2018-03-21
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>  阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="1-AJAX"><a href="#1-AJAX" class="headerlink" title="1.AJAX"></a>1.AJAX</h4><p>url：请求地址<br>type：请求方法，默认为 get<br>dataType：服务端响应数据类型</p>
+<a id="more"></a>
+<p>contentType：请求体内容类型，默认 application/x-www-form-urlencoded<br>data：需要传递到服务端的数据，如果 GET 则通过 URL 传递，如果 POST 则通过请求体传递<br>timeout：请求超时时间</p>
+<p>beforeSend：请求发起之前触发<br>success：请求成功之后触发（响应状态码 200）<br>error：请求失败触发<br>complete：请求完成触发（不管成功与否）</p>
+<h4 id="2-GET和POST的区别"><a href="#2-GET和POST的区别" class="headerlink" title="2.GET和POST的区别"></a>2.GET和POST的区别</h4><ul>
+<li>GET产生一个TCP数据包；POST产生两个TCP数据包。</li>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET产生的URL地址可以被Bookmark，而POST不可以。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求在URL中传送的参数是有长度限制的，而POST么有。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+<li>GET参数通过URL传递，POST放在Request body中。</li>
+</ul>
+<h4 id="3-Accept和Content-Type"><a href="#3-Accept和Content-Type" class="headerlink" title="3.Accept和Content-Type"></a>3.Accept和Content-Type</h4><p>Accept 请求头用来告知客户端可以处理的内容类型，这种内容类型用MIME类型来表示。<br>服务器使用 Content-Type 应答头通知客户端它的选择。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Accept: text/html</span><br><span class="line">Accept: image/*</span><br><span class="line">Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8</span><br></pre></td></tr></table></figure>
+<p>1.Accept属于请求头， Content-Type属于实体头。 <br><br>Http报头分为通用报头，请求报头，响应报头和实体报头。 <br><br>请求方的http报头结构：通用报头|请求报头|实体报头 <br><br>响应方的http报头结构：通用报头|响应报头|实体报头<br></p>
+<p>2.Accept代表发送端（客户端）希望接受的数据类型。 <br><br>比如：Accept：text/xml; <br><br>代表客户端希望接受的数据类型是xml类型<br></p>
+<p>Content-Type代表发送端（客户端|服务器）发送的实体数据的数据类型。 <br><br>比如：Content-Type：text/html; <br><br>代表发送端发送的数据格式是html。<br></p>
+<p>二者合起来， <br><br>Accept:text/xml； <br><br>Content-Type:text/html <br><br>即代表希望接受的数据类型是xml格式，本次请求发送的数据的数据格式是html。<br></p>
+<h4 id="4-状态码"><a href="#4-状态码" class="headerlink" title="4.状态码"></a>4.状态码</h4><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>类别</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1xx</td>
+<td>Informational（信息状态码）</td>
+<td>接受请求正在处理</td>
+</tr>
+<tr>
+<td>2xx</td>
+<td>Success（成功状态码）</td>
+<td>请求正常处理完毕</td>
+</tr>
+<tr>
+<td>3xx</td>
+<td>Redirection（重定向状态码）</td>
+<td>需要附加操作已完成请求</td>
+</tr>
+<tr>
+<td>4xx</td>
+<td>Client Error（客户端错误状态码）</td>
+<td>服务器无法处理请求</td>
+</tr>
+<tr>
+<td>5xx</td>
+<td>Server Error（服务器错误状态码）</td>
+<td>服务器处理请求出错</td>
+</tr>
+</tbody>
+</table>
+<p>166、HTTP 状态消息 200 302 304 403 404 500 分别表示什么<br>200：请求已成功，请求所希望的响应头或数据体将随此响应返回。<br>302：请求的资源临时从不同的 URI 响应请求。由于这样的重定向是临时的，客户端应当<br>继续向原有地址发送以后的请求。只有在 Cache-Control 或 Expires 中进行了指定的情况下，<br>这个响应才是可缓存的<br>304：如果客户端发送了一个带条件的 GET 请求且该请求已被允许，而文档的内容（自上<br>次访问以来或者根据请求的条件）并没有改变，则服务器应当返回这个状态码。304 响应禁<br>止包含消息体，因此始终以消息头后的第一个空行结尾。<br>403：服务器已经理解请求，但是拒绝执行它。<br>404：请求失败，请求所希望得到的资源未被在服务器上发现。<br>500：服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。一般来说，这<br>个问题都会在服务器端的源代码出现错误时出现。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/16/JavaScript原型/" rel="next" title="JavaScript原型">
+                <i class="fa fa-chevron-left"></i> JavaScript原型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/17/PHP的一些用法/" rel="prev" title="PHP的一些用法">
+                PHP的一些用法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -318,6 +535,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -338,8 +559,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -392,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-AJAX"><span class="nav-number">1.</span> <span class="nav-text">1.AJAX</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-GET和POST的区别"><span class="nav-number">2.</span> <span class="nav-text">2.GET和POST的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Accept和Content-Type"><span class="nav-number">3.</span> <span class="nav-text">3.Accept和Content-Type</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-状态码"><span class="nav-number">4.</span> <span class="nav-text">4.状态码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -552,6 +798,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
