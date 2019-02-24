@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta name="description" content="什么是Vue.js Vue.js是是一套用于构建用户界面的渐进式框架，是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript-作用域">
-<meta property="og:url" content="http://yoursite.com/2017/09/18/JavaScript-作用域/index.html">
+<meta property="og:title" content="Vue的基本概念">
+<meta property="og:url" content="http://yoursite.com/2018/12/13/Vue的基本概念/index.html">
 <meta property="og:site_name" content="φ(๑˃∀˂๑)♪ 学习是我的全部">
-<meta property="og:description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta property="og:description" content="什么是Vue.js Vue.js是是一套用于构建用户界面的渐进式框架，是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-21T02:08:09.611Z">
+<meta property="og:updated_time" content="2019-02-24T03:24:53.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript-作用域">
-<meta name="twitter:description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta name="twitter:title" content="Vue的基本概念">
+<meta name="twitter:description" content="什么是Vue.js Vue.js是是一套用于构建用户界面的渐进式框架，是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/18/JavaScript-作用域/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/13/Vue的基本概念/">
 
 
 
 
 
-  <title>JavaScript-作用域 | φ(๑˃∀˂๑)♪ 学习是我的全部</title>
+  <title>Vue的基本概念 | φ(๑˃∀˂๑)♪ 学习是我的全部</title>
   
 
 
@@ -282,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/18/JavaScript-作用域/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/13/Vue的基本概念/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhou">
@@ -299,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript-作用域</h1>
+          <h1 class="post-title" itemprop="name headline">Vue的基本概念</h1>
         
 
         <div class="post-meta">
@@ -311,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-18T00:00:00+08:00">
-                2017-09-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-13T00:00:00+08:00">
+                2018-12-13
               </time>
             
 
@@ -348,7 +348,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  786
+                  1.8k
                 </span>
               
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  6
                 </span>
               
             </div>
@@ -385,31 +385,70 @@
       
 
       
-        <h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>作用域：变量可以起作用的范围</p>
-<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><a id="more"></a>
-<ul>
-<li><p>全局变量</p>
-<p>在任何地方都可以访问到的变量就是全局变量，对应全局作用域。在函数外声明。</p>
+        <h3 id="什么是Vue-js"><a href="#什么是Vue-js" class="headerlink" title="什么是Vue.js"></a>什么是Vue.js</h3><ul>
+<li><p>Vue.js是是一套用于构建用户界面的<strong>渐进式框架</strong>，是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）</p>
+<a id="more"></a>
 </li>
-<li><p>局部变量</p>
-<p>只在固定的代码片段内可访问到的变量，最常见的例如函数内部。对应局部作用域(函数作用域)</p>
+<li><p>Vue.js 是前端的<strong>主流框架之一</strong>，和Angular.js、React.js 一起，并成为前端三大主流框架！</p>
+</li>
+<li><p>Vue.js 是一套构建用户界面的框架，<strong>只关注视图层</strong>，它不仅易于上手，还便于与第三方库或既有项目整合。（Vue有配套的第三方类库，可以整合起来做大型项目的开发）</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">不使用var声明的变量是隐式全局变量，不推荐使用。</span><br><span class="line">变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁</span><br></pre></td></tr></table></figure>
-<h3 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h3><p>任何一对花括号（｛和｝）中的语句集都属于一个块，在这之中定义的所有变量在代码块外都是不可见的，我们称之为块级作用域。<br><strong>在es5之前没有块级作用域的的概念,只有函数作用域</strong>，现阶段可以认为JavaScript没有块级作用域</p>
-<h3 id="词法作用域"><a href="#词法作用域" class="headerlink" title="词法作用域"></a>词法作用域</h3><p>因为 JavaScript 采用的是<strong>词法作用域，函数的作用域在函数定义的时候就决定了。</strong></p>
-<p>而与词法作用域相对的是<strong>动态作用域，函数的作用域是在函数调用的时候才决定的。</strong></p>
-<p><strong>在 js 中词法作用域规则:</strong></p>
+<h3 id="Vue的核心思想"><a href="#Vue的核心思想" class="headerlink" title="Vue的核心思想"></a>Vue的核心思想</h3><blockquote>
 <ul>
-<li>函数允许访问函数外的数据.</li>
-<li>整个代码结构中只有函数可以限定作用域.</li>
-<li>作用域规则首先使用提升规则分析：声明会被提升，赋值不会提升</li>
-<li>如果当前作用规则中有名字了, 就不考虑外面的名字</li>
+<li>数据驱动，没有dom操作，页面显示由数据驱动</li>
+<li>组件化，一个页面可以划分成很多组件</li>
+<li>状态管理 ，vuex，可用于在多个页面之间进行数据共享</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> value = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> value = <span class="number">2</span>;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">bar();</span><br><span class="line"><span class="comment">// 结果是 ???</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">假设JavaScript采用静态作用域，让我们分析下执行过程：</span><br><span class="line"></span><br><span class="line">执行 foo 函数，先从 foo 函数内部查找是否有局部变量 value，如果没有，就根据书写的位置，查找上面一层的代码，也就是 value 等于 <span class="number">1</span>，所以结果会打印 <span class="number">1</span>。</span><br><span class="line"></span><br><span class="line">假设JavaScript采用动态作用域，让我们分析下执行过程：</span><br><span class="line"></span><br><span class="line">执行 foo 函数，依然是从 foo 函数内部查找是否有局部变量 value。如果没有，就从调用函数的作用域，也就是 bar 函数内部查找 value 变量，所以结果会打印 <span class="number">2</span>。</span><br><span class="line"></span><br><span class="line">前面我们已经说了，JavaScript采用的是静态作用域，所以这个例子的结果是 <span class="number">1</span>。</span><br></pre></td></tr></table></figure>
-<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><p>只有函数可以制造作用域结构。凡是代码中有函数，那么这个函数就构成另一个作用域。如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域。</p>
-<p>将这样的所有的作用域列出来，可以有一个结构: 函数内指向函数外的链式结构。就称作作用域链。</p>
-<p>作用域链:变量的使用,从里向外,层层的搜索,搜索到了就可以直接使用了。层层搜索,搜索到0级作用域的时候,如果还是没有找到这个变量,结果就是报错</p>
+</blockquote>
+<p>​    Vue.js 是一个提供了 MVVM 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。 ViewModel负责连接 View 和 Model，保证视图和数据的一致性，这种轻量级的架构让前端开发更加高效、便捷。</p>
+<h3 id="1-1-5-MVC和MVVM"><a href="#1-1-5-MVC和MVVM" class="headerlink" title="1.1.5.MVC和MVVM"></a>1.1.5.MVC和MVVM</h3><h4 id="a-MVC"><a href="#a-MVC" class="headerlink" title="a) MVC"></a>a) MVC</h4><p>​    M - Model ：数据保存</p>
+<p>​    V - View : 用户界面</p>
+<p>​    C - Controller ： 业务逻辑</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户操作--&gt; View (负责接受用户的输入操作)--&gt;Controller（业务逻辑处理）--&gt;Model（数据持久化）--&gt;View（将结果通过View反馈给用户）</span><br></pre></td></tr></table></figure>
+<p>​    MVC有两个很明显的问题：</p>
+<p>​    1.m层和v层直接打交道，导致这两层耦合度高</p>
+<p>​    2.因为所有逻辑都写在c层，导致c层特别臃肿</p>
+<h4 id="b-MVVM"><a href="#b-MVVM" class="headerlink" title="b) MVVM"></a>b) MVVM</h4><p>​    前端应用的复杂程度已不同往日，暴露出了三个痛点问题：</p>
+<p>　　1.开发者在代码中大量调用相同的DOM API, 处理繁琐，操作冗余，使得代码难以维护。</p>
+<p>　　2.大量的DOM 操作使页面渲染性能降低，加载速度变慢，影响用户体验。</p>
+<p>　　3.当 Model 频繁发生变化，开发者需要主动更新到View ；当用户的操作导致Model发生变化，开发者同样需要将变化的数据同步到Model中， 这样的工作不仅繁琐，而且很难维护复杂多变的数据状态。</p>
+<p>　　早期 jQuery 的出现就是为了前端能更简洁的操作DOM 而设计的，但它只解决了第一个问题，另外两个问题始终伴随着前端一直存在。</p>
+<p>​    MVVM 的出现，完美解决了以上三个问题，MVVM 包含的三部分：</p>
+<p>　　1.Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；</p>
+<p>　　2.View 代表UI 组件，它负责将数据模型转化成UI 展现出来</p>
+<p>　　3.ViewModel 是一个同步View 和 Model的对象。View 和 Model 之间并没有直接的联系，而是通过ViewModel进行交互。ViewModel 层，它就像是一个中转站（value converter），负责转换 Model 中的数据对象来让数据变得更容易管理和使用，该层向上与视图层进行双向数据绑定，向下与 Model 层通过接口请求进行数据交互，起呈上启下作用。如下图：</p>
+<p>​    MVVM 模式采用双向绑定（data-binding）：View的变动，自动反映在 ViewModel，反之亦然，而View 和 Model 之间的同步工作完全是自动的，无需人为干涉，因此开发者只需关注业务逻辑，不需要手动操作DOM, 不需要关注数据状态的同步问题，复杂的数据状态维护完全由 MVVM 来统一管理。angular 和vue都采用这种模式。</p>
+<h4 id="c-前后端的MVC"><a href="#c-前后端的MVC" class="headerlink" title="c) 前后端的MVC"></a>c) 前后端的MVC</h4><p>​    一般情况下，后端的框架中多数采用MVC模式，比如structs2、springMVC、ASP.MVC、Express等</p>
+<p>​    前端MVC大部分都是MVVM，包括angularJS、vue等。前后端分离的情况下，后端的MVC框架主要负责JSON数据的返回。</p>
+<h3 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h3><ul>
+<li><p>.stop       阻止冒泡</p>
+</li>
+<li><p>.prevent    阻止默认事件</p>
+</li>
+<li><p>.capture    添加事件侦听器时使用事件捕获模式</p>
+</li>
+<li><p>.self       只当事件在该元素本身（比如不是子元素）触发时触发回调</p>
+</li>
+<li><p>.once       事件只触发一次</p>
+<h3 id="v-model和双向绑定"><a href="#v-model和双向绑定" class="headerlink" title="v-model和双向绑定"></a>v-model和双向绑定</h3><p>​    只有v-model指令实现了双向绑定， v-model 只能运用在表单元素中。如： input(radio, text, address, email….)   select    checkbox   textarea</p>
+<h3 id="双向绑定的原理"><a href="#双向绑定的原理" class="headerlink" title="双向绑定的原理"></a>双向绑定的原理</h3><h4 id="页面–-gt-数据"><a href="#页面–-gt-数据" class="headerlink" title="页面–&gt;数据"></a>页面–&gt;数据</h4><p>​    view更新data只需要添加DOM事件监听即可，比如input标签监听 ‘input’ 事件就可以实现</p>
+<h4 id="数据–-gt-页面"><a href="#数据–-gt-页面" class="headerlink" title="数据–&gt;页面"></a>数据–&gt;页面</h4><p>​    是通过数据劫持 + 发布者-订阅者模式的方式来实现的</p>
+<h5 id="数据劫持"><a href="#数据劫持" class="headerlink" title="数据劫持"></a>数据劫持</h5><p>​    vue是通过Object.defineProperty()来实现数据劫持的</p>
+<h5 id="数据绑定的实现流程"><a href="#数据绑定的实现流程" class="headerlink" title="数据绑定的实现流程"></a>数据绑定的实现流程</h5><p>​    首先要对数据进行劫持监听，所以我们需要设置一个监听器Observer，用来监听所有属性。如果属性发上变化了，就需要告诉订阅者Watcher看是否需要更新。</p>
+<p>​    因为订阅者是有很多个，所以我们需要有一个消息订阅器Dep来专门收集这些订阅者，然后在监听器Observer和订阅者Watcher之间进行统一管理的。</p>
+<p>​    接着，我们还需要有一个指令解析器Compile，对每个节点元素进行扫描和解析，将相关指令对应初始化成一个订阅者Watcher，并替换模板数据或者绑定相应的函数，此时当订阅者Watcher接收到相应属性的变化，就会执行对应的更新函数，从而更新视图。</p>
+<p>​    因此接下去我们执行以下3个步骤，实现数据的双向绑定：</p>
+<blockquote>
+<p>1.监听器Observer，用来劫持并监听所有属性，如果有变动的，就通知所有订阅者。</p>
+<p>2.订阅者Watcher，可以收到属性的变化通知并执行相应的函数，从而更新视图。</p>
+<p>3.解析器Compile，可以扫描和解析每个节点的相关指令，并根据初始化模板数据以及初始化相应的订阅者</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="循环中key的使用"><a href="#循环中key的使用" class="headerlink" title="循环中key的使用"></a>循环中key的使用</h4><p>​    当 Vue.js 用 v-for 正在更新已渲染过的元素列表时，它默认用 “<strong>就地复用</strong>” 策略。如果数据项的顺序被改变，Vue将<strong>不是移动 DOM 元素来匹配数据项的顺序</strong>， 而是<strong>简单复用此处每个元素</strong>，并且确保它在特定索引下显示已被渲染过的每个元素。</p>
+<p>​    为了给 Vue 一个提示，<strong>以便它能跟踪每个节点的身份，从而重用和重新排序现有元素</strong>，你需要为每项提供一个唯一 key 属性。</p>
+<h3 id="v-if和v-show"><a href="#v-if和v-show" class="headerlink" title="v-if和v-show"></a>v-if和v-show</h3><p>​    一般来说，v-if 有更高的切换消耗而 v-show 有更高的初始渲染消耗。因此，如果需要频繁切换 v-show 较好，如果在运行时条件不大可能改变 v-if 较好。</p>
 
       
     </div>
@@ -434,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/13/JavaScript中的call-apply-bind/" rel="next" title="JavaScript中的call,apply,bind">
-                <i class="fa fa-chevron-left"></i> JavaScript中的call,apply,bind
+              <a href="/2018/08/25/MongoDB的介绍/" rel="next" title="MongoDB的介绍">
+                <i class="fa fa-chevron-left"></i> MongoDB的介绍
               </a>
             
           </div>
@@ -443,10 +482,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/29/JavaScript的内存管理/" rel="prev" title="JavaScript的内存管理">
-                JavaScript的内存管理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -599,7 +634,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域"><span class="nav-number">1.</span> <span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局变量和局部变量"><span class="nav-number">1.1.</span> <span class="nav-text">全局变量和局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块级作用域"><span class="nav-number">1.2.</span> <span class="nav-text">块级作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词法作用域"><span class="nav-number">1.3.</span> <span class="nav-text">词法作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域链"><span class="nav-number">1.4.</span> <span class="nav-text">作用域链</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是Vue-js"><span class="nav-number">1.</span> <span class="nav-text">什么是Vue.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vue的核心思想"><span class="nav-number">2.</span> <span class="nav-text">Vue的核心思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-5-MVC和MVVM"><span class="nav-number">3.</span> <span class="nav-text">1.1.5.MVC和MVVM</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-MVC"><span class="nav-number">3.1.</span> <span class="nav-text">a) MVC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-MVVM"><span class="nav-number">3.2.</span> <span class="nav-text">b) MVVM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-前后端的MVC"><span class="nav-number">3.3.</span> <span class="nav-text">c) 前后端的MVC</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件修饰符"><span class="nav-number">4.</span> <span class="nav-text">事件修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-model和双向绑定"><span class="nav-number">5.</span> <span class="nav-text">v-model和双向绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双向绑定的原理"><span class="nav-number">6.</span> <span class="nav-text">双向绑定的原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#页面–-gt-数据"><span class="nav-number">6.1.</span> <span class="nav-text">页面–&gt;数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据–-gt-页面"><span class="nav-number">6.2.</span> <span class="nav-text">数据–&gt;页面</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#数据劫持"><span class="nav-number">6.2.1.</span> <span class="nav-text">数据劫持</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#数据绑定的实现流程"><span class="nav-number">6.2.2.</span> <span class="nav-text">数据绑定的实现流程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环中key的使用"><span class="nav-number">6.3.</span> <span class="nav-text">循环中key的使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-if和v-show"><span class="nav-number">7.</span> <span class="nav-text">v-if和v-show</span></a></li></ol></div>
             
 
           </div>

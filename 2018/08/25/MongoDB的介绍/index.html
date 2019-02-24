@@ -6,10 +6,10 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta name="description" content="MongoDB基本原理什么是数据库？关能存储数据的东西是数据库么？不是。txt也能存储东西，但是txt不是数据库。 因为数据库 = 存储东西 + 数据库操作API。 我们不仅仅能够存储100个学生，而且要能快速查找其中大于15岁且语文成绩大于80分的人。txt做不到这个事情，所以txt文本文件只是持久数据的一种方式，但是不是数据库。 MongoDB存储JSON，并且不是简单的存储JSON，而是能够">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript-作用域">
-<meta property="og:url" content="http://yoursite.com/2017/09/18/JavaScript-作用域/index.html">
+<meta property="og:title" content="MongoDB的介绍">
+<meta property="og:url" content="http://yoursite.com/2018/08/25/MongoDB的介绍/index.html">
 <meta property="og:site_name" content="φ(๑˃∀˂๑)♪ 学习是我的全部">
-<meta property="og:description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta property="og:description" content="MongoDB基本原理什么是数据库？关能存储数据的东西是数据库么？不是。txt也能存储东西，但是txt不是数据库。 因为数据库 = 存储东西 + 数据库操作API。 我们不仅仅能够存储100个学生，而且要能快速查找其中大于15岁且语文成绩大于80分的人。txt做不到这个事情，所以txt文本文件只是持久数据的一种方式，但是不是数据库。 MongoDB存储JSON，并且不是简单的存储JSON，而是能够">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-21T02:08:09.611Z">
+<meta property="og:image" content="file:///C:/Users/zz/AppData/Local/Temp/ksohtml/wpsEA65.tmp.jpg">
+<meta property="og:updated_time" content="2019-02-24T03:40:14.446Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript-作用域">
-<meta name="twitter:description" content="作用域作用域：变量可以起作用的范围 全局变量和局部变量">
+<meta name="twitter:title" content="MongoDB的介绍">
+<meta name="twitter:description" content="MongoDB基本原理什么是数据库？关能存储数据的东西是数据库么？不是。txt也能存储东西，但是txt不是数据库。 因为数据库 = 存储东西 + 数据库操作API。 我们不仅仅能够存储100个学生，而且要能快速查找其中大于15岁且语文成绩大于80分的人。txt做不到这个事情，所以txt文本文件只是持久数据的一种方式，但是不是数据库。 MongoDB存储JSON，并且不是简单的存储JSON，而是能够">
+<meta name="twitter:image" content="file:///C:/Users/zz/AppData/Local/Temp/ksohtml/wpsEA65.tmp.jpg">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/18/JavaScript-作用域/">
+  <link rel="canonical" href="http://yoursite.com/2018/08/25/MongoDB的介绍/"/>
 
 
 
 
 
-  <title>JavaScript-作用域 | φ(๑˃∀˂๑)♪ 学习是我的全部</title>
+  <title>MongoDB的介绍 | φ(๑˃∀˂๑)♪ 学习是我的全部</title>
   
 
 
@@ -151,7 +153,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">φ(๑˃∀˂๑)♪ 学习是我的全部</span>
         <span class="logo-line-after"><i></i></span>
@@ -181,7 +183,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -191,7 +193,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -201,7 +203,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -211,7 +213,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -224,7 +226,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
             搜索
           </a>
@@ -245,7 +247,9 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -282,11 +286,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/18/JavaScript-作用域/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/25/MongoDB的介绍/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhou">
-      <meta itemprop="description" content>
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/my.jpg">
     </span>
 
@@ -299,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript-作用域</h1>
+          <h1 class="post-title" itemprop="name headline">MongoDB的介绍</h1>
         
 
         <div class="post-meta">
@@ -311,8 +315,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-18T00:00:00+08:00">
-                2017-09-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-25T00:00:00+08:00">
+                2018-08-25
               </time>
             
 
@@ -333,7 +337,7 @@
           
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-file-o"></i>  阅读数
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           
 
@@ -348,7 +352,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  786
+                  2.2k
                 </span>
               
 
@@ -364,7 +368,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  8
                 </span>
               
             </div>
@@ -385,31 +389,192 @@
       
 
       
-        <h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>作用域：变量可以起作用的范围</p>
-<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><a id="more"></a>
+        <h2 id="MongoDB基本原理"><a href="#MongoDB基本原理" class="headerlink" title="MongoDB基本原理"></a><strong>MongoDB基本原理</strong></h2><p>什么是数据库？关能存储数据的东西是数据库么？不是。txt也能存储东西，但是txt不是数据库。</p>
+<p>因为<strong>数据库 = 存储东西 + 数据库操作API</strong>。</p>
+<p>我们不仅仅能够存储100个学生，而且要能快速查找其中大于15岁且语文成绩大于80分的人。txt做不到这个事情，所以txt文本文件只是持久数据的一种方式，但是不是数据库。</p>
+<p>MongoDB存储JSON，并且不是简单的存储JSON，而是能够非常方便的使用简单的API去检索数据。 </p>
+<p>数据从头到尾是不变形的，用户提交的表单是JSON，存储到数据库中也是JSON。反过来说，从数据库中提取的是JSON，前端Ajax读取的也是JSON。数据从头到尾不变形，非常美！</p>
+<p>MongoDB是NoSQl，非结构型数据库。比SQL好在哪儿？不限制字段，每个条目（MongoDB中称为文档，一个文档就是一个标准JSON）都可以有自己的字段，比如下面的四个文档是合法的：</p>
+<p>{“uname”:”小明”,”age”:12,”sex”:”男”}</p>
+<p>{“uname”:”小红”,”age”:13,”sex”:”女”}</p>
+<p>{“uname”:”小刚”,”age”:12,”sex”:”男”,”provice”:”广东”}</p>
+<p>{“title”:”一人我饮酒醉”,”singer”:”天佑”}</p>
+<p>第3个文档增加了一个字段，第4个文档干脆就存储的和前三个没有关系。MongoDB是合法的，不限制文档的字段。</p>
+<p>数据库由集合（collection）组成，集合由文档（document）构成：</p>
+<p><img src="file:///C:\Users\zz\AppData\Local\Temp\ksohtml\wpsEA65.tmp.jpg" alt="img"> </p>
+<p>虽然MongoDB允许我们一个集合中的所有文档有不同的字段，但是最好一个集合中存储相关的数据。比如你存储学生就存储学生，不要存储歌曲、小狗。</p>
+<h2 id="MongoDB的开机"><a href="#MongoDB的开机" class="headerlink" title="MongoDB的开机"></a>MongoDB的开机</h2><p>在CMD中要先使用mongod开机，然后使用mongo控制数据库。 </p>
+<p>首先应该建立一个文件夹，存储数据库数据：</p>
+<p>$ cd c:\</p>
+<p>$ mkdir mydatabase</p>
+<p>使用mongod开机：</p>
+<p>$ mongod –dbpath c:\mydatabase</p>
+<p>此时需要再打开一个CMD窗口，用mongo命令进入REPL环境。 </p>
+<p>Read读命令，Eval执行命令，Print打印结果，Loop再来一次。</p>
+<p>在笔记上，用$开头的都是CMD命令，</p>
+<p>$</p>
+<p>>会暗示你这是REPL命令：</p>
+<p>></p>
+<h2 id="MongoDB常用REPL命令"><a href="#MongoDB常用REPL命令" class="headerlink" title="MongoDB常用REPL命令"></a><strong>MongoDB常用REPL命令</strong></h2><p>一定注意，下面列出的命令都需要事先进入mongo里面的REPL环境敲击。</p>
+<p>查看数据库列表：</p>
+<p>> show dbs </p>
+<p>使用某一个数据库，如果不存在则创建（当你插入了一个数据之后创建）</p>
+<p>> use xueshe </p>
+<p>插入数据，这条命令会自动创建集合banji1120。也就是说创建数据库用use，创建集合没有命令。插入文档了，就创建集合了。</p>
+<p>> db.banji1120.insert({“uname”:”小明”,”age”:12,”sex”:”男”})</p>
+<p>显示所有数据</p>
+<p>> db.banji1120.find()</p>
+<p>显示当前数据库中的所有集合</p>
+<p>> show collections </p>
+<p>删除集合：</p>
+<p>>  db.bangi1120.drop()</p>
+<p>删除数据库：</p>
+<p>>  db.dropDatabase()</p>
+<h2 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a><strong>导入数据</strong></h2><p>下面的命令不需要进入REPL环境！！</p>
+<p>数据库仍然要维持开机状态。再次强调，千万不要进入REPL中使用下面的命令！</p>
+<p>在桌面创建这个文件，JSON和JSON之间没有逗号：</p>
+<p>{“uname”:”李灵黛”,”age”:12,”sex”:”男”,”provice”:”上海”}</p>
+<p>{“uname”:”柳辰飞”,”age”:13,”sex”:”女”,”provice”:”北京”}</p>
+<p>{“uname”:”江城子”,”age”:17,”sex”:”男”,”provice”:”广东”}</p>
+<p>{“uname”:”萧合凰”,”age”:37,”sex”:”女”,”provice”:”河北”}</p>
+<p>{“uname”:”西粼宿”,”age”:16,”sex”:”男”,”provice”:”广东”}</p>
+<p>{“uname”:”千湄”,”age”:13,”sex”:”女”,”provice”:”广东”}</p>
+<p>{“uname”:”林墨瞳”,”age”:13,”sex”:”女”,”provice”:”吉林”}</p>
+<p>{“uname”:”柳婵诗”,”age”:14,”sex”:”女”,”provice”:”河北”}</p>
+<p>{“uname”:”李念儿”,”age”:19,”sex”:”女”,”provice”:”广东”}</p>
+<p>$ mongoimport -d xuesheng -c banji1120 C:\Users\Danny\Desktop\1.txt</p>
+<p>-d参数表示需要往哪个数据库中导入数据</p>
+<p>-c 参数表示需要往哪个集合(表)中导入数据</p>
+<p>最后罗列需要导入的txt文档。</p>
+<p>提示你成功的导入了9条文档 </p>
+<p>导出的方法自己百度。mongoexport基本参数自己查文档、博客学习。</p>
+<h1 id="NodeJS结合MongoDB"><a href="#NodeJS结合MongoDB" class="headerlink" title="NodeJS结合MongoDB"></a><strong>NodeJS结合MongoDB</strong></h1><h2 id="用NodeJS操作MongoD"><a href="#用NodeJS操作MongoD" class="headerlink" title="用NodeJS操作MongoD"></a>用NodeJS操作MongoD</h2><p>数据库一定给各种语言提供API，比如PHP可以操作MySQL。</p>
+<p>NodeJS可以方便操作MongoDB。</p>
+<p>依赖的东西叫做mongodb</p>
+<p>$ cnpm install –save mongodb</p>
+<p>链接数据库并且试着检索数据：</p>
+<p>/*</p>
 <ul>
-<li><p>全局变量</p>
-<p>在任何地方都可以访问到的变量就是全局变量，对应全局作用域。在函数外声明。</p>
+<li><p>链接数据库的API，不要背诵，直接复制：</p>
 </li>
-<li><p>局部变量</p>
-<p>只在固定的代码片段内可访问到的变量，最常见的例如函数内部。对应局部作用域(函数作用域)</p>
+<li><p><a href="http://mongodb.github.io/node-mongodb-native/2.2/" target="_blank" rel="noopener">http://mongodb.github.io/node-mongodb-native/2.2/</a></p>
+</li>
+<li><p><a href="http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/" target="_blank" rel="noopener">http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/</a></p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">不使用var声明的变量是隐式全局变量，不推荐使用。</span><br><span class="line">变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁</span><br></pre></td></tr></table></figure>
-<h3 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h3><p>任何一对花括号（｛和｝）中的语句集都属于一个块，在这之中定义的所有变量在代码块外都是不可见的，我们称之为块级作用域。<br><strong>在es5之前没有块级作用域的的概念,只有函数作用域</strong>，现阶段可以认为JavaScript没有块级作用域</p>
-<h3 id="词法作用域"><a href="#词法作用域" class="headerlink" title="词法作用域"></a>词法作用域</h3><p>因为 JavaScript 采用的是<strong>词法作用域，函数的作用域在函数定义的时候就决定了。</strong></p>
-<p>而与词法作用域相对的是<strong>动态作用域，函数的作用域是在函数调用的时候才决定的。</strong></p>
-<p><strong>在 js 中词法作用域规则:</strong></p>
-<ul>
-<li>函数允许访问函数外的数据.</li>
-<li>整个代码结构中只有函数可以限定作用域.</li>
-<li>作用域规则首先使用提升规则分析：声明会被提升，赋值不会提升</li>
-<li>如果当前作用规则中有名字了, 就不考虑外面的名字</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> value = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> value = <span class="number">2</span>;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">bar();</span><br><span class="line"><span class="comment">// 结果是 ???</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">假设JavaScript采用静态作用域，让我们分析下执行过程：</span><br><span class="line"></span><br><span class="line">执行 foo 函数，先从 foo 函数内部查找是否有局部变量 value，如果没有，就根据书写的位置，查找上面一层的代码，也就是 value 等于 <span class="number">1</span>，所以结果会打印 <span class="number">1</span>。</span><br><span class="line"></span><br><span class="line">假设JavaScript采用动态作用域，让我们分析下执行过程：</span><br><span class="line"></span><br><span class="line">执行 foo 函数，依然是从 foo 函数内部查找是否有局部变量 value。如果没有，就从调用函数的作用域，也就是 bar 函数内部查找 value 变量，所以结果会打印 <span class="number">2</span>。</span><br><span class="line"></span><br><span class="line">前面我们已经说了，JavaScript采用的是静态作用域，所以这个例子的结果是 <span class="number">1</span>。</span><br></pre></td></tr></table></figure>
-<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><p>只有函数可以制造作用域结构。凡是代码中有函数，那么这个函数就构成另一个作用域。如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域。</p>
-<p>将这样的所有的作用域列出来，可以有一个结构: 函数内指向函数外的链式结构。就称作作用域链。</p>
-<p>作用域链:变量的使用,从里向外,层层的搜索,搜索到了就可以直接使用了。层层搜索,搜索到0级作用域的时候,如果还是没有找到这个变量,结果就是报错</p>
+<p>*/</p>
+<p>var MongoClient = require(‘mongodb’).MongoClient;</p>
+<p>// 链接数据库，最后的反斜杠表示数据库的名字</p>
+<p>var url = ‘mongodb://localhost:27017/xuesheng’;</p>
+<p>// 标准动作，连接数据库之后然后对数据库进行CRUD操作</p>
+<p>MongoClient.connect(url, function(err, db) {</p>
+<p>​    if(err){</p>
+<p>​        console.log(“连接数据库失败，因为你忘记了mongod开机”);</p>
+<p>​        return;</p>
+<p>​    }</p>
+<p>​    console.log(“链接数据库成功”);</p>
+<p>​    //检索所有年龄大于15岁并且是广东的男的</p>
+<p>​    db.collection(“banji1120”).find(</p>
+<p>​        {“age” : {$gt : 15} , “provice” : “广东” , “sex” : “男”}</p>
+<p>​    ).toArray(function(err,arr){</p>
+<p>​        console.log(arr);</p>
+<p>​        //关闭数据库</p>
+<pre><code>db.close();
+</code></pre><p>​    });</p>
+<p>});</p>
+<p>其他增删改查操作，看昨天的案例。或者手册：</p>
+<p><a href="http://mongodb.github.io/node-mongodb-native/2.2/tutorials/crud/" target="_blank" rel="noopener">http://mongodb.github.io/node-mongodb-native/2.2/tutorials/crud/</a></p>
+<h2 id="结合Express做一个带数据库的程序"><a href="#结合Express做一个带数据库的程序" class="headerlink" title="结合Express做一个带数据库的程序"></a>结合Express做一个带数据库的程序</h2><p>最俗套学生管理系统，能够增、删学生。</p>
+<p>MongoDB不多做案例，因为MongoDB是反MVC开发模式的，现在都需要结合Mongoose来开发。</p>
+<p>写了一个项目project_StudentManagement自己看代码。只粘贴模型：</p>
+<p>models/db.js：</p>
+<p>var MongoClient = require(‘mongodb’).MongoClient;</p>
+<p>// 链接数据库，最后的反斜杠表示数据库的名字</p>
+<p>var url = ‘mongodb://localhost:27017/xuesheng’;</p>
+<p>//得到所有数据</p>
+<p>function getAllStudent(callback){</p>
+<p>​    // 标准动作，连接数据库之后然后对数据库进行CRUD操作</p>
+<p>​    MongoClient.connect(url, function(err, db) {</p>
+<p>​        if(err){</p>
+<p>​            console.log(“连接数据库失败，因为你忘记了mongod开机”);</p>
+<p>​            return;</p>
+<p>​        }</p>
+<p>​        console.log(“链接数据库成功”);</p>
+<p>​        //检索所有人</p>
+<p>​        db.collection(“banji1120”).find({}).toArray(function(err,arr){</p>
+<p>​            callback(arr);</p>
+<p>​            //关闭数据库</p>
+<p>​             db.close();</p>
+<p>​        });</p>
+<p>​    });</p>
+<p>}</p>
+<p>//暴露</p>
+<p>exports.getAllStudent = getAllStudent;</p>
+<p>结构：</p>
+<p>我们用jQuery去发出Ajax请求，然后用underscore填充模板：</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en"><br><br><head><meta name="generator" content="Hexo 3.8.0"><br><br>​    <meta charset="UTF-8"><br><br>​    <title>学生管理系统</title><br><br>​    <style type="text/css"><br><br>​    </style><br><br></head><br><br><body><br><br>​    <section><br><br>​        <h1>学生管理系统</h1><br><br>​        <table id="biaoge2"><br><br>​            <tr><br><br>​                <th>姓名</th><br><br>​                <th>年龄</th><br><br>​                <th>性别</th><br><br>​                <th>籍贯</th><br><br>​            </tr><br><br>​        </table><br><br>​    </section><br><br><br><br>​    <script type="text/template"><br><br>​        <tr><br><br>​            <td>&lt;%= name %&gt;</td><br><br>​            <td>&lt;%= age %&gt;</td><br><br>​            <td>&lt;%= sex %&gt;</td><br><br>​            <td>&lt;%= provice %&gt;</td><br><br>​        </tr><br><br>​    </script><br><br><br><br>​    <script type="text/javascript" src="/jquery.min.js"></script><br><br>​    <script type="text/javascript" src="/underscore.min.js"></script><br><br><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":100,"height":100},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body><br><br></html>
+
+
+
+<p>underscore和ejs的标记冲突，所以ejs傻不拉几的认为你没有传入足够的字典数据。</p>
+<p>改变underscore的源代码，搜索&lt;%这个东西，就能定位这里：</p>
+<h1 id="Mongoose初步"><a href="#Mongoose初步" class="headerlink" title="Mongoose初步"></a><strong>Mongoose初步</strong></h1><h2 id="Mongoose简介"><a href="#Mongoose简介" class="headerlink" title="Mongoose简介"></a><strong>Mongoose简介</strong></h2><p>看看mongodb编程有什么不方便的地方：</p>
+<p>1） 如果集合非常多的话，此时你的模型层势必要有这样的写法：</p>
+<p>//得到所有数据</p>
+<p>function <strong>getAllStudent</strong>(callback){</p>
+<p>​    // 标准动作，连接数据库之后然后对数据库进行CRUD操作</p>
+<p>​    MongoClient.connect(url, function(err, db) {</p>
+<p>​        //检索所有人</p>
+<p>​        db.collection(“student”).find({}).toArray(function(err,arr){</p>
+<p>​            callback(arr);</p>
+<p>​            //关闭数据库</p>
+<p>​             db.close();</p>
+<p>​        });</p>
+<p>​    });</p>
+<p>}</p>
+<p>function <strong>getAllDog</strong>(callback){</p>
+<p>​    // 标准动作，连接数据库之后然后对数据库进行CRUD操作</p>
+<p>​    MongoClient.connect(url, function(err, db) {</p>
+<p>​        //检索所有人</p>
+<p>​        db.collection(“dog”).find({}).toArray(function(err,arr){</p>
+<p>​            callback(arr);</p>
+<p>​            //关闭数据库</p>
+<p>​             db.close();</p>
+<p>​        });</p>
+<p>​    });</p>
+<p>}</p>
+<p>控制每个不同的集合，有大量类似的代码，对每个集合都要有增删改查的操作。代码比较臃肿。</p>
+<p>2）数据库代码永远使用的是一个没有结构的、面向过程的编程模式。我永远要思考数据的事情，编程的时候要考虑的事情太多。</p>
+<p>Java中也出现了这样的问题，Java的Hibernate框架解决了这个事情。</p>
+<p>Hibernate是一个<strong>ORM框架，Object Relationship Map，对象关系映射。一句话，就是让程序员可以用面向对象的思维操作数据库，换句话说，根本不需要考虑数据的持久化，对象改变了，数据自动改变。</strong></p>
+<p>Mongoose是配合MongoDB使用的ORM库。我们操作数据库太爽了，不需要想到有数据库这个事情，只需要操作对象，数据会被Mongoose自动持久。</p>
+<p>Mongoose是猫鼬的意思： </p>
+<p>官网：<a href="http://mongoosejs.com/" target="_blank" rel="noopener">http://mongoosejs.com/</a></p>
+<h2 id="HelloWorld"><a href="#HelloWorld" class="headerlink" title="HelloWorld"></a><strong>HelloWorld</strong></h2><p>安装依赖：</p>
+<p>$ cnpm install mongoose –save</p>
+<p>最基本的使用：</p>
+<p>//引入mongoose，mongoose的依赖中自动有mongodb的，所以不需要再次引入mongodb</p>
+<p>var mongoose = require(‘mongoose’);</p>
+<p>//链接数据库，端口号不需要写，最后的反斜杠是数据库名字</p>
+<p>mongoose.connect(‘mongodb://localhost/ceshi’);</p>
+<p>//用mongoose.model()函数创建一个模型，是一个类。此时你传入的第一个参数将自动大写变为小写，末尾加s，变为集合名字。第二个参数是<em>schema</em>，就是字段列表，用kv对表示字段名字和类型。</p>
+<p>var Student = mongoose.model(‘Student’, { </p>
+<p>​    sname : String,</p>
+<p>​    sex : String,</p>
+<p>​    age : Number</p>
+<p>});</p>
+<p>//实例化对象</p>
+<p>var xiaoming = new Student({</p>
+<p>​    sname : “小明”,</p>
+<p>​    sex : “男”,</p>
+<p>​    age : 12</p>
+<p>});</p>
+<p><strong>//保存对象</strong></p>
+<p>xiaoming.save(); </p>
+<p>程序一旦运行：</p>
+<p>系统就会帮我们创建ceshi数据库，创建students集合名字，保存小明这一条数据。 </p>
+<p>此时你会发现，我们没有一条语句是明显的在操作数据库，底层操作由Mongoose帮我们完成。</p>
 
       
     </div>
@@ -434,8 +599,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/13/JavaScript中的call-apply-bind/" rel="next" title="JavaScript中的call,apply,bind">
-                <i class="fa fa-chevron-left"></i> JavaScript中的call,apply,bind
+              <a href="/2018/07/13/express的相关概念/" rel="next" title="express的相关概念">
+                <i class="fa fa-chevron-left"></i> express的相关概念
               </a>
             
           </div>
@@ -444,8 +609,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/29/JavaScript的内存管理/" rel="prev" title="JavaScript的内存管理">
-                JavaScript的内存管理 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/13/Vue的基本概念/" rel="prev" title="Vue的基本概念">
+                Vue的基本概念 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -480,7 +645,7 @@
 <a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
 <a class="jiathis_counter_style"></a>
 </div>
-<script type="text/javascript">
+<script type="text/javascript" >
 var jiathis_config={
   data_track_clickback:true,
   summary:"",
@@ -538,7 +703,9 @@ var jiathis_config={
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/my.jpg" alt="Zhou">
+              <img class="site-author-image" itemprop="image"
+                src="/images/my.jpg"
+                alt="Zhou" />
             
               <p class="site-author-name" itemprop="name">Zhou</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -582,7 +749,7 @@ var jiathis_config={
           
           
 
-		  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
+		  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
 		  
           
 
@@ -599,7 +766,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域"><span class="nav-number">1.</span> <span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局变量和局部变量"><span class="nav-number">1.1.</span> <span class="nav-text">全局变量和局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块级作用域"><span class="nav-number">1.2.</span> <span class="nav-text">块级作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词法作用域"><span class="nav-number">1.3.</span> <span class="nav-text">词法作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域链"><span class="nav-number">1.4.</span> <span class="nav-text">作用域链</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB基本原理"><span class="nav-number">1.</span> <span class="nav-text">MongoDB基本原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB的开机"><span class="nav-number">2.</span> <span class="nav-text">MongoDB的开机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB常用REPL命令"><span class="nav-number">3.</span> <span class="nav-text">MongoDB常用REPL命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导入数据"><span class="nav-number">4.</span> <span class="nav-text">导入数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NodeJS结合MongoDB"><span class="nav-number"></span> <span class="nav-text">NodeJS结合MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#用NodeJS操作MongoD"><span class="nav-number">1.</span> <span class="nav-text">用NodeJS操作MongoD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结合Express做一个带数据库的程序"><span class="nav-number">2.</span> <span class="nav-text">结合Express做一个带数据库的程序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number"></span> <span class="nav-text">学生管理系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mongoose初步"><span class="nav-number"></span> <span class="nav-text">Mongoose初步</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mongoose简介"><span class="nav-number">1.</span> <span class="nav-text">Mongoose简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HelloWorld"><span class="nav-number">2.</span> <span class="nav-text">HelloWorld</span></a></li></ol></div>
             
 
           </div>
